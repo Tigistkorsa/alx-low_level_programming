@@ -2,7 +2,7 @@
 /**
  * main -print out size of diffrent data type in c
  *
- * return: 0
+ * return: it retun 0
  */
 int main(void)
 {
@@ -16,6 +16,6 @@ int main(void)
 	printf("size of a long int: %lu byte(S)\n", (unsigned long)sizeof(c);
 	printf("size of a long long int: %lu byte(S)\n", (unsigned long)sizeof(d);
 	printf("size of a float: %lu byte(S)\n", (unsigned long)sizeof(f);
-	return(0);
+	return (0);
 }
 
