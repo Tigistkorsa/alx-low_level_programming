@@ -1,17 +1,10 @@
 #include <stdio.h>
-
-
-
 /**
+ * main -the main function displya the size of data type Entry point
  *
- * *main -Entry point
+ * Return:Always it return 0  for success
  *
- * *Return: Always 0 (Success)
- *
- * */
-
-
-
+ */
 int main(void)
 
 {
