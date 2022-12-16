@@ -1,16 +1,14 @@
 #include "main.h"
-                                                                  
 
-/**                                                               
- *
- *  * print_name -prints a name                                      
- *
- *   * @name:name to print                                            
- *
- *    * @f:pointer to the printing function                            
- *
- *     * */                                                             
+/**
+ * print_alphabet -print the alpha in lowercase
+ */
+void print_alphabet(void)
+{
+	char la;
 
-void print_name(char *name,void (*f)(char *))                     
+	for (la = 'a'; la <= 'z'; la++;)
+		_putchar(la);
 
-{                                               
+	_putchar('\n');
+}
