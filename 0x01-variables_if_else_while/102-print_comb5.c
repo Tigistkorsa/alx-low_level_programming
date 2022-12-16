@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
- * main -maint function returns a combination of number
+ * main -prints all possible combinations of two two-digit numbers.
  *
- * Return: return 0 if successful
+ * return: return 0 if successful
  *
  */
 int main(void)
