@@ -9,29 +9,29 @@
 int main(void)
 {
 
-	int n;
-	int num;
+	int x;
+	int y;
 
 	srand(time(0));
 
-	n = rand() - RAND_MAX / 2;
+	x = rand() - RAND_MAX / 2;
 
-	printf("Last digit of %d is ", n);
+	printf("Last digit of %d is ", x);
 
-	num = n % 10;
-	if (num > 5)
+	y = x % 10;
+	if (y > 5)
 
 	{
 
-	printf("%d and is greater than 5\n", num);
+	printf("%d and is greater than 5\n", y);
 
 	}
 
-	else if ((num < 6) && (num < 0))
+	else if ((y < 6) && (y < 0))
 
 	{
 
-		printf("%d and is less than 6 and not 0\n", num);
+		printf("%d and is less than 6 and not 0\n", y);
 
 	}
 
@@ -39,7 +39,7 @@ int main(void)
 
 	{
 
-		printf("%d and is 0\n", num);
+		printf("%d and is 0\n", y);
 
 	}
 
