@@ -1,39 +1,43 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * rev_string - This function prints a string in reverse order
- *
- * @s: pointer parameter
- *
+ * print_sign - return 0 letter not lowercase, 1 letter lowercase
+ * @n : number to check
+ * Return: 0 or 1
  */
 
-void rev_string(char *s)
+int print_sign(int n)
 
 {
 
-	int len, i, half;
+	int test;
 
-	char temp;
-
-	for (len = 0; s[len] != '\0'; len++)
-
-	i = 0;
-
-	half = len / 2;
-
-	while (half--)
+	if (n > 0)
 
 	{
 
-		temp = s[len - i - 1];
+		test = 1;
 
-		s[len - i - 1] = s[i];
-
-		s[i] = temp;
-
-		i++;
+		_putchar('+');
 
 	}
 
+	else if (n == 0)
+
+	{
+
+		test = 0;
+		_putchar('0');
+
+	}
+
+	else
+
+	{
+
+		test = -1;
+		_putchar('-');
+
+	}
+
+	return (test);
 }
