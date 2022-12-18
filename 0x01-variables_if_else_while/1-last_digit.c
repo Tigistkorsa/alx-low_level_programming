@@ -9,16 +9,16 @@
 int main(void)
 {
 
-	int x;
+	int n;
 	int y;
 
 	srand(time(0));
 
-	x = rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 
-	printf("Last digit of %d is ", x);
+	printf("Last digit of %d is ", n);
 
-	y = x % 10;
+	y = n % 10;
 	if (y > 5)
 
 	{
