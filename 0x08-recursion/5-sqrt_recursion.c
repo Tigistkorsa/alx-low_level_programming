@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * checker-to get the square root of two numbers
- * @a:first number
- * @b:number to test for the square root of @a
+ * checker - Finds the square root of two numbers
+ * @a: The number
+ * @b: The number to test for the square root of @a
  * Return: square root
+ *
  */
 
 int checker(int a, int b)
@@ -27,6 +28,15 @@ int checker(int a, int b)
 
 }
 
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ *
+ * @n: the number to return the square root of
+ *
+ * Return: the square root of @n
+ *
+ */
+
 int _sqrt_recursion(int n)
 
 {
@@ -38,5 +48,3 @@ int _sqrt_recursion(int n)
 	return (checker(n, 1));
 
 }
-
-	
