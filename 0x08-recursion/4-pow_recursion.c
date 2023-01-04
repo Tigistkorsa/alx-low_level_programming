@@ -9,7 +9,7 @@
  *
  * Return: the value of @x to the @y power
  *
- i* */
+ */
 
 int _pow_recursion(int x, int y)
 
@@ -25,6 +25,6 @@ int _pow_recursion(int x, int y)
 
 	y--;
 
-	return (x * (_pow_recursion(x, y )));
+	return (x * (_pow_recursion(x, y)));
 
 }
