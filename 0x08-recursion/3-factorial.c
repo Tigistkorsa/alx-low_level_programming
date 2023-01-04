@@ -3,7 +3,7 @@
 /**
  * factorial - to display the factorial of a n number
  *
- * @n: the number to find the factorials 
+ *@n: the number to find the factorials
  *
  * Return: the factorial of @n
  *
