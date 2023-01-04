@@ -7,7 +7,7 @@
  *
  * Return: the factorial of @n
  *
- * */
+ */
 
 int factorial(int n)
 
