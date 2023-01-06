@@ -1,19 +1,11 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <ctype.h>
-
 /**
-
  * main - main funct
-
  * @argc: param count
-
  * @argv: param poiter
-
  * Return: int
-
  */
 
 int main(int argc, char *argv[])
