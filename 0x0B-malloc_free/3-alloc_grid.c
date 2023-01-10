@@ -1,38 +1,20 @@
-nclude "main.h"
-
+#include "main.h"
 #include <stdio.h>
-
 #include <stdlib.h>
 
-
-
 /**
-
  * alloc_grid - function to return a pointer of a 2d array
-
- *
-
  * @width: width of the grid
-
  * @height: height of the grid
-
- *
-
  * Return: NULL for failure or 0/ neg height/ width
-
  */
 
 int **alloc_grid(int width, int height)
 
 {
-
-
-
 	int **matrix;
 
 	int a, b;
-
-
 
 	if (width < 1)
 
