@@ -1,37 +1,44 @@
 #include "main.h"
-
 /**
-*isqrt_k - computs sqrt
-* @k: input intiger
-* @n: input integer
-* Return: returns recursive number
-* Author: mgemoraw
-*/
-int isqrt_k(int k, int n)
+ *_evaluate - evaluate function sqrt
+ *@i: interger
+ *@n: interger
+ *Return: evaluate sqrt
+ */
+
+int _evaluate(int i, int n)
 {
-int new_k;
-if (n < 0)
+/*Evaluate function*/
+if (n == 0 || n == 1)
+return (n);
+
+else if (i * i < n)
+return (_evaluate(i + 1, n));
+
+else if (i * i == n) /*Condiction base*/
+return (i);
+
 return (-1);
 
-new_k = (k + n / k) / 2;
-if ((k * k <= n) && (k + 1) * (k + 1) > n)
-{
-return (k);
+return (-1);
 }
-else
-{
-return (isqrt_k(new_k, n));
-}
-}
+
 /**
-* _sqrt_recursion - finds natural square root of a number
-* @n: input square number
-* Return: returns square root of a number
-* Author: mgemoraw
+ *_sqrt_recursion - evaluate sqrt
+ *@n: interger
+ *Return: Sgrt_recursion
 */
+
 int _sqrt_recursion(int n)
 {
-return (isqrt_k(1, n));
+int i = 0;
+
+if (i < 0) /*If n is negative*/
+return (-1);
+
+else
+{
+return (_evaluate(i, n)); /*Recursive call*/
 }
 
-
+}

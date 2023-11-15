@@ -1,40 +1,50 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-* _strlen - returns length of string
-* @str: input character array
-* Return: returns size of string
-* Author: mgemoraw
-*/
-int _strlen(char *str)
+ * _strlen_recursion - size
+ * @s: pointer to string params
+ * Return: recursion
+ */
+
+int _strlen_recursion(char *s)
 {
-int len = 0;
-while (*(str + len) != '\0')
-{
-len++;
-}
-return (len);
+	if (!*s)
+	{
+		return (0);
+	}
+	return (1 + _strlen_recursion(++s));
 }
 
 /**
-* is_palindrome - checks for palindrom text
-* @s: input character array
-* Return: returns 1 if palindrom and 0 if not
-* Author: mgemoraw
-*/
+ * p1 - palindrome
+ * @s: pointer to string
+ * @l: position
+ * Return: boolena
+ */
+
+int p1(char *s, int l)
+{
+	if (l < 1)
+	{
+		return (1);
+	}
+
+	if (*s == *(s + l))
+	{
+		return (p1(s + 1, l - 2));
+	}
+	return (0);
+}
+
+/**
+ * is_palindrome - palindrome
+ * @s: pointer to string
+ * Return: recursion
+ */
+
 int is_palindrome(char *s)
 {
-int x;
-if (s == NULL)
-return (1);
+	int len = _strlen_recursion(s);
 
-x = _strlen(s);
-
-if (x == 0)
-return (1);
-else
-return (0);
+	return (p1(s, len - 1));
 }
-
-
